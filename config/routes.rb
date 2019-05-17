@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :cocktails do
-    resources :ingredients, only: [:create, :edit]
-    resources :doses, only: [:create, :new, :delete]
+    resources :doses, only: [:create, :new]
   end
+  resources :doses, only: [:destroy]
+  root to: 'cocktails#index'
 end

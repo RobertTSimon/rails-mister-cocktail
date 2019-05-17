@@ -1,12 +1,37 @@
 .navbar-lewagon {
+  display: flex;
   justify-content: space-between;
   background: white;
+  box-shadow: 0px 3px 3px #D3D3D3;
+  margin-bottom: 2px;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  width: 25%;
+}
+
+.navbar-lewagon .navbar-header {
+  flex-grow: 1;
 }
 
 .navbar-lewagon .navbar-brand img {
+  width: 50px;
+}
+.navbar-lewagon .navbar-logo {
+  width: 25%;
+}
+.dropdown-toggle {
   width: 40px;
+  height: 40px;
+}
+.logo {
+  border-radius: 50%;
+}
+.navbar-nav .mr-auto {
+  margin-right: 0px;
+}
+h1 {
+  margin: 0px;
+  font-family: 'Montserrat', 'sans-serif';
 }
