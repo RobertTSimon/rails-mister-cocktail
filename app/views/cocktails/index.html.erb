@@ -5,7 +5,10 @@
   <% end %>
 </div>
 
-  <h1>Cocktails!</h1>
+  <!-- <h1>Cocktails!</h1> -->
+  <h1 class="ml3">
+    <span class="text-wrapper">Cocktails!</span>
+  </h1>
 
 
   <div class="d-flex justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,15 +31,16 @@
 </div>
 
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
-  <div class="container">
-    <h1>My cocktails <strong>allows drink lovers</strong> to <strong>create fantastic cocktails</strong>!</h1>
-    <p>Change your life and learn to create amazing cocktails one at a time thanks to our application.</p>
+  <div class="container" style="
+    text-align: center;">
+    <div id="rotate-div">
+      <h2 id="rotate"> Cocktails
+        <span class="txt-rotate" data-period="1800" data-rotate="[ &quot;allows drink lovers to create fantastic cocktails!&quot;, &quot;changes your life and learn to create amazing cocktails one at a time thanks to our application.&quot;, &quot;&quot;, &quot;&quot; ]"><span class="wrap"></span></span>
+      </h2>
+    </div>
     <%= link_to "Start creating", new_cocktail_path, class: "btn-primary" %>
   </div>
 </div>
-
-
-
 
 <div class="container">
   <h1>Your cocktails</h1>
