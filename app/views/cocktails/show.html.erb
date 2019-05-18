@@ -1,12 +1,14 @@
 <div class="container">
-  <h1><%= @cocktail.name %></h1>
-  <% @cocktail.doses.each do |dose| %>
-  <li> <%= dose.ingredient.name %> - <%= dose.description %> </li>
-  <% end %>
-  <%= link_to "Your cocktails", cocktails_path %> <br>
-  <%= link_to "Add ingredients", new_cocktail_dose_path(@cocktail) %> <br>
-  <%= linl_to "Delete cocktail", dose_path(@cocktail) %>
+    <h1><%= @cocktail.name %></h1>
+    <% @cocktail.doses.each do |dose| %>
+    <li> <%= dose.ingredient.name %> - <%= dose.description %> </li>
+    <% end %>
+    <p><%= @cocktail.description %></p>
+    <%= link_to "Your cocktails", cocktails_path %> <br>
+    <%= link_to "Add ingredients", new_cocktail_dose_path(@cocktail) %> <br>
+    <%= link_to "Delete cocktail", cocktail_path, method: :delete %> <br>
+    <%= link_to "Delete ingredients and dose", dose_path, method: :delete %>
+  </div>
 
 
-  <p><%= @cocktail.description %></p>
 

@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar sticky-top navbar-expand-sm navbar-light navbar-lewagon">
 <div class="navbar-logo">
   <%= link_to "#", class: "navbar-brand" do %>
     <%= image_tag "cocktail_logo.jpg", class:"logo" %>
@@ -11,10 +11,10 @@
   <div class="d-flex justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <%= link_to "Home", "#", class: "nav-link" %>
+        <%= link_to "Home", cocktails_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Add a cocktail", "#" %>
+        <%= link_to "Add a cocktail", new_cocktail_path, class: "nav-link" %>
       </li>
       <li class="nav-item dropdown">
         <%= image_tag "robert.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
@@ -26,6 +26,15 @@
     </ul>
   </div>
 </div>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h1>My cocktails <strong>allows drink lovers</strong> to <strong>create fantastic cocktails</strong>!</h1>
+    <p>Change your life and learn to create amazing cocktails one at a time thanks to our application.</p>
+    <%= link_to "Start creating", new_cocktail_path, class: "btn-primary" %>
+  </div>
+</div>
+
 
 
 
@@ -41,4 +50,19 @@
     <% end %>
     </div>
 </div>
+
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://github.com/RobertTSimon"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/_robbiesimon_/"><i class="fab fa-instagram"></i></a>
+    <a href="#https://www.facebook.com/robbie.simon.37"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/bortresa?lang=en"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/robert-simon-94b38b173/"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> by <strong>Robert Simon</strong> at Le Wagon!
+  </div>
+</div>
+
 
